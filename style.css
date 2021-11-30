@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap');
+
+body {
+    font-family: 'Poppins';
+    background-color: #9097C0;
+}
+
+.img {
+    background-image: url(./assets/Humaaans\ -\ Standing.png);
+    background-repeat: no-repeat;
+    position: inherit;
+    float: center;
+}
+
+.card {
+    width: 40vw;
+    height: 40vh;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+    background-color: #F2F5EA;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-records {
+    z-index: 1;
+    width: 19%;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: #F2F5EA;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    
+}
+
+#increment-btn, #save-btn{
+    font-weight: 700;
+    justify-content: space-between;
+    transition: .5s ease all;
+}
+
+#increment-btn:hover {
+    transform: scale(1.08);
+}
+
+#save-btn {
+    background-color: #2C363F;
+    margin-left: 20px;
+}
+
+#save-btn:hover {
+    transform: scale(1.08);
+}
+
+button {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    border: none;
+    background-color: #E75A7C;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    background-color: #2C363F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
